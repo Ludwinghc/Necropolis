@@ -1,0 +1,727 @@
+@charset "UTF-8";
+/* Document */
+*{ margin: 0px;
+padding: 0px;
+box-sizing: border-box;
+font-family: Georgia, 'Times New Roman', Times, serif;
+color: rgb(70, 68, 68);
+}
+
+a{
+    text-decoration: none;
+}
+.Cpapa{
+    width: 1280px;
+    height: 620px;
+}
+button{
+    border: none;
+    background: none;
+}
+.caja1{
+    width: 1280px;
+    height: 620px;
+}
+.usb{
+    background-image: url(../imagenes/FondoI1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 1349px;
+    height: 620px;
+    margin: 0px;
+}
+.menu{
+    width: 1350px;
+    height: 70px;
+    position: fixed;
+    left: 0px;
+    top: 0%;
+    background-color: rgb(111, 52, 139);
+    display: flex;
+    padding: 20px;
+    z-index: 2;
+}
+.botones button{
+    width: 80px;
+    height: 68px;
+    animation: none;
+}
+.botoninicio{
+    font-size: 20px;
+    width: 80px;
+    height: 68px;
+    color: white;
+    margin-right: 60px;
+    margin-left: -60px;
+}
+.botonhistoria{
+    font-size: 25px;
+    width: 80px;
+    height: 68px;
+    color: white;
+    margin-right: 50px;
+    margin-left: 50px;
+}
+.botonniveles{
+    font-size: 25px;
+    width: 80px;
+    height: 68px;
+    color: white;
+    margin-right: 50px;
+    margin-left: 50px;
+}
+.botongaleria{
+    font-size: 25px;
+    width: 80px;
+    height: 68px;
+    color: white;
+    margin-right: 50px;
+    margin-left: 50px;
+}
+.botonpersonajes{
+    font-size: 25px;
+    width: 80px;
+    height: 68px;
+    color: white;
+    margin-right: 70px;
+    margin-left: 50px;
+}
+.botonrevista{
+    font-size: 25px;
+    width: 80px;
+    height: 68px;
+    color: white;
+    margin-right: 30px;
+    margin-left: 50px;
+}
+.botoncontacto{
+    font-size: 25px;
+    width: 80px;
+    height: 68px;
+    color: white;
+    margin-right: 50px;
+    margin-left: 50px;
+}
+.croquetas{
+    display: flex;
+    width: 1349px;
+    height: 620px;
+}
+.gatos{
+    width: 1349px;
+    height: 620px;
+    background-image: url(../imagenes/FondoH1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.Titulo{
+    width: 1349px;
+    height: 50px;
+    margin-top: 100px;
+    text-align: end;
+    padding-right: 90px;
+    font-size: 35px;
+    color: rgb(111, 52, 139);
+    font-family: elephant;
+}
+.Imagen{
+    background-image: url(../videos/libroP.gif);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 1030px;
+    height: 510px;
+    margin-top: -50px;
+    font-size: 25px;
+    text-align: center;
+    color: antiquewhite;
+}
+.chimu{
+    width: 1349px;
+    height: 620px;
+}
+.perros{
+    width: 1349px;
+    height: 620px;
+    background-color: yellow;
+    display: flex;
+    padding: 90px;
+}
+.bts{
+    margin-top: 50px;
+    padding: 50px;
+    display: flex;
+    height: 500px;
+    width: 1349px;
+}
+
+.container .card .face.face1{
+    width: 300px;
+    height: 200px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    box-sizing: border-box;
+    box-shadow: 0 20px 50px rgba(255, 253, 253, 0.315);
+    transform: translateY(100px);
+    z-index: 1;
+    background: rgb(158, 173, 217);
+    border-radius: 30px;
+    margin-right: 15px;
+    transition: all 1s ease;
+}
+
+.container .card:hover .face.face1{
+    background: rgb(247, 174, 125);
+    transform: translateY(0px);
+    transition: all 1s ease;
+}
+
+.container .card .face.face1 .content i{
+    width: 50px;
+    height: 50px;
+}
+
+.container .card .face.face2{
+    width: 300px;
+    height: 200px;
+    position: relative;
+    background: rgb(111, 52, 139);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    box-sizing: border-box;
+    box-shadow: 0 20px 50px rgba(255, 253, 253, 0.315);
+    transform: translateY(-100px);
+    border-radius: 30px;
+    margin-right: 15px;
+    transition: all 2s ease;
+}
+
+.container .card:hover .face.face2{
+    transform: translateY(0px);
+    transition: all 1s ease;
+}
+
+
+
+
+.container2 .card2 .face2.face3{
+    width: 300px;
+    height: 200px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    box-sizing: border-box;
+    box-shadow: 0 20px 50px rgba(255, 253, 253, 0.315);
+    transform: translateY(100px);
+    z-index: 1;
+    background: rgb(111, 52, 139);
+    border-radius: 30px;
+    margin-right: 15px;
+    transition: all 1s ease;
+}
+
+.container2 .card2:hover .face2.face3{
+    background: rgb(131, 78, 117);
+    transform: translateY(0px);
+    transition: all 1s ease;
+}
+
+.container2 .card2 .face2.face3 .content2 i{
+    width: 50px;
+    height: 50px;
+}
+
+.container2 .card2 .face2.face4{
+    width: 300px;
+    height: 200px;
+    position: relative;
+    background: rgb(158, 173, 217);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    box-sizing: border-box;
+    box-shadow: 0 20px 50px rgba(255, 253, 253, 0.315);
+    transform: translateY(-100px);
+    border-radius: 30px;
+    margin-right: 15px;
+    transition: all 2s ease;
+}
+
+.container2 .card2:hover .face2.face4{
+    transform: translateY(0px);
+    transition: all 1s ease;
+}
+
+
+
+
+.container3 .card3 .face3.face5{
+    width: 300px;
+    height: 200px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    box-sizing: border-box;
+    box-shadow: 0 20px 50px rgba(255, 253, 253, 0.315);
+    transform: translateY(100px);
+    z-index: 1;
+    background: rgb(247, 174, 125);
+    border-radius: 30px;
+    margin-right: 15px;
+    transition: all 1s ease;
+}
+
+.container3 .card3:hover .face3.face5{
+    background: rgb(158, 173, 217);
+    transform: translateY(0px);
+    transition: all 1s ease;
+}
+
+.container3 .card3 .face3.face3 .content3 i{
+    width: 50px;
+    height: 50px;
+}
+
+.container3 .card3 .face3.face6{
+    width: 300px;
+    height: 200px;
+    position: relative;
+    background: rgb(131, 78, 117);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    box-sizing: border-box;
+    box-shadow: 0 20px 50px rgba(255, 253, 253, 0.315);
+    transform: translateY(-100px);
+    border-radius: 30px;
+    margin-right: 15px;
+    transition: all 2s ease;
+}
+
+.container3 .card3:hover .face3.face6{
+    transform: translateY(0px);
+    transition: all 1s ease;
+}
+
+
+
+
+
+.container4 .card4 .face4.face7{
+    width: 300px;
+    height: 200px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    box-sizing: border-box;
+    box-shadow: 0 20px 50px rgba(255, 253, 253, 0.315);
+    transform: translateY(100px);
+    z-index: 1;
+    background: rgb(131, 78, 117);
+    border-radius: 30px;
+    margin-right: 15px;
+    transition: all 1s ease;
+}
+
+.container4 .card4:hover .face4.face7{
+    background: rgb(111, 52, 139);
+    transform: translateY(0px);
+    transition: all 1s ease;
+}
+
+.container4 .card4 .face4.face7 .content4 i{
+    width: 50px;
+    height: 50px;
+}
+
+.container4 .card4 .face4.face8{
+    width: 300px;
+    height: 200px;
+    position: relative;
+    background: rgb(247, 174, 125);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    box-sizing: border-box;
+    box-shadow: 0 20px 50px rgba(249, 253, 0, 0.096);
+    transform: translateY(-100px);
+    border-radius: 30px;
+    margin-right: 15px;
+    transition: all 2s ease;
+}
+
+.container4 .card4:hover .face4.face8{
+    transform: translateY(0px);
+    transition: all 1s ease;
+}
+
+a1, p1{
+    color: rgb(247, 174, 125);
+}
+a2, p2{
+    color: rgb(111, 52, 139);
+}
+a3, p3{
+    color: rgb(158, 173, 217);
+}
+a4, p4{
+    color: rgb(131, 78, 117);
+}
+
+.jin{
+    display: flex;
+    width: 1349px;
+    height: 620px;
+    background-image: url(../imagenes/FondoI1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding-top: 50px;
+}
+.rugard{
+    width: 1349px;
+    height: 620px;
+    background-image: url(../imagenes/FondoG1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.gansos{
+    display: flex;
+    padding-top: 90px;
+    justify-content: center;
+}
+.cuadros1{
+    background-color: aqua;
+    width: 290px;
+    height: 300px;
+    margin-bottom: 10px;
+    text-align: end;
+    font-size: 35px;
+    border-color: rgb(165, 32, 104);
+    border-style:solid;
+    border-radius: 20px;
+}
+.cuadros2{
+    background-color: aqua;
+    width: 290px;
+    height: 180px;
+    margin-left: 30px;
+    margin-bottom: 10px;
+    text-align: end;
+    padding-right: 90px;
+    font-size: 35px;
+    border-color: rgb(165, 32, 104);
+    border-style:solid;
+    border-radius: 20px;
+}
+.cuadros3{
+    background-color: aqua;
+    width: 290px;
+    height: 300px;
+    margin-left: 30px;
+    margin-bottom: 10px;
+    text-align: end;
+    padding-right: 90px;
+    font-size: 35px;
+    border-color: rgb(165, 32, 104);
+    border-style:solid;
+    border-radius: 20px;
+}
+.cuadros4{
+    background-color: aqua;
+    width: 290px;
+    height: 180px;
+    margin-left: 30px;
+    margin-bottom: 10px;
+    text-align: end;
+    padding-right: 90px;
+    font-size: 35px;
+    border-color: rgb(165, 32, 104);
+    border-style:solid;
+    border-radius: 20px;
+}
+.gansos2{
+    display: flex;
+    padding-top: 20px;
+    justify-content: center;
+}
+.cuadros5{
+    background-color: aqua;
+    width: 290px;
+    height: 180px;
+    margin-bottom: 10px;
+    text-align: end;
+    padding-right: 90px;
+    font-size: 35px;
+    border-color: rgb(165, 32, 104);
+    border-style:solid;
+    border-radius: 20px;
+}
+.cuadros6{
+    background-color: aqua;
+    width: 290px;
+    height: 300px;
+    margin-left: 30px;
+    margin-bottom: 10px;
+    text-align: end;
+    padding-right: 90px;
+    font-size: 35px;
+    border-color: rgb(165, 32, 104);
+    border-style:solid;
+    border-radius: 20px;
+    margin-top: -120px;
+}
+.cuadros7{
+    background-color: aqua;
+    width: 290px;
+    height: 180px;
+    margin-left: 30px;
+    margin-bottom: 10px;
+    text-align: end;
+    padding-right: 90px;
+    font-size: 35px;
+    border-color: rgb(165, 32, 104);
+    border-style:solid;
+    border-radius: 20px;
+}
+.cuadros8{
+    background-color: aqua;
+    width: 290px;
+    height: 300px;
+    margin-left: 30px;
+    margin-bottom: 10px;
+    text-align: end;
+    padding-right: 90px;
+    font-size: 35px;
+    border-color: rgb(165, 32, 104);
+    border-style:solid;
+    border-radius: 20px;
+    margin-top: -120px;
+}
+.maria{
+    width: 1349px;
+    height: 620px;
+    background-image: url(../imagenes/FondoH1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    padding-top: 140px;
+    justify-content: center;
+}
+
+.flip-card1 {
+    background-color: transparent;
+    width: 300px;
+    height: 400px;
+    perspective: 1000px;
+    margin:20px;
+    transform-style: preserve-3d;
+    transform: rotatey(-15deg);
+    margin-top: 23px;
+  }
+  
+  .flip-card-inner1 {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 5s;
+    transform-style: preserve-3d;
+    transform: rotatey(-15deg);
+    box-shadow: 0 4px 8px 0 rgba(255, 255, 255, 0.356);
+  }
+  
+  .flip-card1:hover .flip-card-inner1 {
+    transform: rotateY(180deg);
+  }
+  
+  .personaje1, .informacion1 {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+  }
+  
+  .personaje1 {
+    background: rgb(158, 173, 217);
+    color: rgb(111, 52, 139);
+    border-radius: 20px;
+  }
+  
+  .informacion1 {
+    background-color: rgb(158, 173, 217);
+    color: rgb(111, 52, 139);
+    transform: rotateY(180deg);
+    border-radius: 20px;
+  }
+
+
+
+  .flip-card2 {
+    background-color: transparent;
+    width: 300px;
+    height: 420px;
+    perspective: 1000px;
+    margin:10px;
+    transform-style: preserve-3d;
+    transform: rotatey(0deg);
+  }
+  
+  .flip-card-inner2 {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 5s;
+    transform-style: preserve-3d;
+    transform: rotatey(0deg);
+    box-shadow: 0 4px 8px 0 rgba(202, 200, 200, 0.521);
+  }
+  
+  .flip-card2:hover .flip-card-inner2 {
+    transform: rotateY(180deg);
+  }
+  
+  .personaje2, .informacion2 {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+  }
+  
+  .personaje2 {
+    background: rgb(111, 52, 139);
+    color: rgb(247, 174, 125);
+    border-radius: 20px;
+  }
+  
+  .informacion2 {
+    background-color: rgb(111, 52, 139);
+    color: rgb(247, 174, 125);
+    transform: rotateY(180deg);
+    border-radius: 20px;
+  }
+
+
+
+  .flip-card3 {
+    background-color: transparent;
+    width: 300px;
+    height: 400px;
+    perspective: 1000px;
+    margin:20px;
+    transform-style: preserve-3d;
+    transform: rotatey(15deg);
+  }
+  
+  .flip-card-inner3 {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 5s;
+    transform-style: preserve-3d;
+    transform: rotatey(15deg);
+    box-shadow: 0 4px 8px 0 rgba(255, 255, 255, 0.562);
+  }
+  
+  .flip-card3:hover .flip-card-inner3 {
+    transform: rotateY(180deg);
+  }
+  
+  .personaje3, .informacion3 {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+  }
+  
+  .personaje3 {
+    background: rgb(131, 78, 117);
+    color: rgb(247, 174, 125);
+    border-radius: 20px;
+  }
+  
+  .informacion3 {
+    background-color: rgb(131, 78, 117);
+    color: rgb(247, 174, 125);
+    transform: rotateY(180deg);
+    border-radius: 20px;
+  }
+
+.danna{
+    display: flex;
+    width: 1349px;
+    height: 620px;
+    background-image: url(../imagenes/FondoR1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.revista{
+    width: 1349px;
+    height: 620px;
+}
+.regalos{
+    width: 1349px;
+    height: 50px;
+    margin-top: 100px;
+    text-align: end;
+    padding-right: 90px;
+    font-size: 35px;
+    font-family: elephant;
+    color: rgb(247, 174, 125);
+}
+.casa{
+    background-image: url(../imagenes/RevistaP.png);
+    background-repeat: no-repeat; 
+    background-size: 50%; 
+    background-position: center;
+    width: 870px;
+    height: 510px;
+    margin-top: -100px;
+    font-size: 25px;
+    text-align: center;
+    color: antiquewhite;
+}
+.correo{
+    display: flex;
+    width: 1349px;
+    height: 320px;
+}
+.contacto{
+    width: 1349px;
+    height: 320px;
+    background-color: rgb(111, 52, 139);
+}
+.texto{
+    background-color: rgb(111, 52, 139);
+    width: 1349px;
+    height: 420px;
+    margin-top: -50px;
+    font-size: 25px;
+    text-align: center;
+    color: antiquewhite;
+}
+
