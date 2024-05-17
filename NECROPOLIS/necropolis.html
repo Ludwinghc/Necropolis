@@ -1,347 +1,255 @@
 <!DOCTYPE html>
 <html lang="español">
+<!-- head de la página y hojas de estilos -->
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Todo lo relacionado a css se debe guardar en este archivo -->
     <link href="estilos/estilos.css" rel="stylesheet" type="text/css">
     <title>NECROPOLIS</title>
-    <style>
-        /* width */
-        ::-webkit-scrollbar {
-          width: 17px;
-          height: 15px;
-          background: white;
-        }
-        /* Track */
-        ::-webkit-scrollbar-track {
-          border-radius: 10px;
-        }
-        /* Handle */
-        ::-webkit-scrollbar-thumb {
-          background: rgb(158, 173, 217); 
-          border-radius: 40px;
-        }
-        /* Handle on hover */
-        ::-webkit-scrollbar-thumb:hover {
-          background: rgb(247, 174, 125); 
-        }
-
-#loader {
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  z-index: 1;
-  width: 120px;
-  height: 120px;
-  margin: -76px 0 0 -76px;
-  background-image: linear-gradient(0deg, rgb(176, 38, 211) 0%, rgb(241, 189, 44) 100%);
-  border-radius: 50%;
-  border: 16px solid  rgb(176, 38, 211),rgb(241, 189, 44) ;
-  -webkit-animation: spin 2s linear infinite;
-  animation: spin 2s linear infinite;
-}
-
-@-webkit-keyframes spin {
-  0% { -webkit-transform: rotate(0deg); }
-  100% { -webkit-transform: rotate(360deg); }
-}
-
-@keyframes spin {
-  0% { transform: rotate(0deg); }
-  100% { transform: rotate(360deg); }
-}
-
-/* Add animation to "page content" */
-.animate-bottom {
-  position: relative;
-  -webkit-animation-name: animatebottom;
-  -webkit-animation-duration: 1s;
-  animation-name: animatebottom;
-  animation-duration: 1s;
-}
-
-@-webkit-keyframes animatebottom {
-  from { bottom:-100px; opacity:0 } 
-  to { bottom:0px; opacity:1 }
-}
-
-@keyframes animatebottom { 
-  from{ bottom:-100px; opacity:0 } 
-  to{ bottom:0; opacity:1 }
-}
-
-#myDiv {
-  display: none;
-  text-align: center;
-}
-
-.dropbtn {
-  background-color: rgba(111, 52, 139, 0);
-  color: white;
-  padding: 6px;
-  font-size: 16px;
-  border: none;
-  cursor: pointer;
-  width: 90PX;
-  height: 20PX;
-}
-
-.dropdown {
-  position: relative;
-  display: inline-block;
-}
-
-.dropdown-content {
-  display: none;
-  position: absolute;
-  background-color: rgb(131, 78, 117);
-  min-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-  z-index: 1;
-  width: 355PX;
-  height: 535PX;
-  padding-top: 15px;
-}
-
-.dropdown-content a {
-  color: rgb(247, 174, 125);
-  padding: 12px 16px;
-  text-decoration: none;
-  display: block;
-  font-size: 50px;
-}
-
-.dropdown-content a:hover {background-color: rgb(131, 78, 117)}
-
-.dropdown:hover .dropdown-content {
-  display: block;
-}
-
-.dropdown:hover .dropbtn {
-    background-color: rgba(111, 52, 139, 0);
-}
-    </style>
 </head>
+<!-- Estructura del DOM de la página -->
 <body onload="myFunction()" style="margin:0;">
-
-<div id="loader"></div>
-
-<div id="myDiv" style="display:none;">
-    <div id="patatas">
-        <div class="caja1">
-            <button>
-                <a href="#patatas"><div class="usb"></div></a>
-            </button>
+    <div id="loader"></div>
+    <div id="myDiv" style="display:none;">
+        <div id="patatas">
+            <div class="caja1">
+                <button>
+                    <a href="#patatas">
+                        <div class="usb"></div>
+                    </a>
+                </button>
+            </div>
         </div>
-    </div>
-    <div class="Cpapa">
-        <body>
+        <div class="Cpapa">
             <div class="menu">
                 <div class="dropdown">
                     <button class="dropbtn"></button>
                     <div class="dropdown-content">
-                    <a href="#historia">HISTORIA</a>
-                    <a href="#niveles">NIVELES</a>
-                    <a href="#galeria">GALERIA</a>
-                    <a href="#personajes">PERSONAJES</a>
-                    <a href="#revista">REVISTA</a>
-                    <a href="#contacto">CONTACTO</a>
+                        <a href="#historia">HISTORIA</a>
+                        <a href="#niveles">NIVELES</a>
+                        <a href="#galeria">GALERIA</a>
+                        <a href="#personajes">PERSONAJES</a>
+                        <a href="#revista">REVISTA</a>
+                        <a href="#contacto">CONTACTO</a>
                     </div>
                 </div>
                 <button>
-                    <a href="#patatas"><div class="botoninicio">NECROPOLIS</div></a>
+                    <a href="#patatas">
+                        <div class="botoninicio">NECROPOLIS</div>
+                    </a>
                 </button>
                 <button>
-                    <a href="#historia"><div class="botonhistoria">HISTORIA</div></a>
+                    <a href="#historia">
+                        <div class="botonhistoria">HISTORIA</div>
+                    </a>
                 </button>
                 <button>
-                    <a href="#niveles"><div class="botonniveles">NIVELES</div></a>
+                    <a href="#niveles">
+                        <div class="botonniveles">NIVELES</div>
+                    </a>
                 </button>
                 <button>
-                    <a href="#galeria"><div class="botongaleria">GALERIA</div></a>
+                    <a href="#galeria">
+                        <div class="botongaleria">GALERIA</div>
+                    </a>
                 </button>
                 <button>
-                    <a href="#personajes"><div class="botonpersonajes">PERSONAJES</div></a>
+                    <a href="#personajes">
+                        <div class="botonpersonajes">PERSONAJES</div>
+                    </a>
                 </button>
                 <button>
-                    <a href="#revista"><div class="botonrevista">REVISTA</div></a>
+                    <a href="#revista">
+                        <div class="botonrevista">REVISTA</div>
+                    </a>
                 </button>
                 <button>
-                    <a href="#contacto"><div class="botoncontacto">CONTACTO</div></a>
+                    <a href="#contacto">
+                        <div class="botoncontacto">CONTACTO</div>
+                    </a>
                 </button>
             </div>
             <div id="historia">
-                    <div class="croquetas">
-                        <div class="gatos">
-                            <div class="Titulo">HISTORIA</div>
-                            <div class="Imagen"></div>
-                        </div>
-                    </div>
-            <div id="niveles"> 
-            <div class="jin">   
-                <div class="bts">
-                    <div class="container">
-                        <div class="card">
-                            <div class="face face1">
-                                <div class="content">
-                                    <div class="icon">
-                                        <i class="fa fa-linkedin-square" aria-hidden="true"></i>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="face face2">
-                                <div class="content">
-                                    <h1>
-                                        <a1 href="g" target="_blank">NIVEL I</a1>
-                                    </h1>
-                                    <p1>DATO IMPORTANTE E HISTORICO: Primer creador del modernismo en Lengua Española.</p1>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                
-                    <div class="container2">
-                        <div class="card2">
-                            <div class="face2 face3">
-                                <div class="content2">
-                                    <div class="icon2">
-                                        <i class="fa fa-linkedin-square" aria-hidden="true"></i>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="face2 face4">
-                                <div class="content2">
-                                    <h1>
-                                        <a2 href="g" target="_blank">NIVEL II</a2>
-                                    </h1>
-                                    <p2>DATO IMPORTANTE E HISTORICO: Emitio la ley 126 del 31 de diciembre que dio vida a la fuerza Aerea Colombiana.</p2>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                
-                    <div class="container3">
-                        <div class="card3">
-                            <div class="face3 face5">
-                                <div class="content3">
-                                    <div class="icon3">
-                                        <i class="fa fa-linkedin-square" aria-hidden="true"></i>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="face3 face6">
-                                <div class="content3">
-                                    <h1>
-                                        <a3 href="g" target="_blank">NIVEL III</a3>
-                                    </h1>
-                                    <p3>DATO IMPORTANTE E HISTORICO: Escribio " y esta pobre viejecita al morir de dejó más que onzas, joyas, tierras, casas, ocho gatos y un turpial".</p3>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                
-                    <div class="container4">
-                        <div class="card4">
-                            <div class="face4 face7">
-                                <div class="content4">
-                                    <div class="icon4">
-                                        <i class="fa fa-linkedin-square" aria-hidden="true"></i>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="face4 face8">
-                                <div class="content4">
-                                    <h1>
-                                        <a4 href="g" target="_blank">NIVEL IV</a4>
-                                    </h1>
-                                    <p4>DATO IMPORTANTE E HISTORICO: Se graduo en la Universidad Nacional con los titulos de Matematico e Ingeniero Civil.</p4>
-                                </div>
-                            </div>
-                        </div>
+                <div class="croquetas">
+                    <div class="gatos">
+                        <div class="Titulo">HISTORIA</div>
+                        <div class="Imagen"></div>
                     </div>
                 </div>
-            </div> 
-            <div id="galeria"> 
-                    <div class="rugard">
-                        <div class="gansos">
-                            <div class="cuadros1"></div>
-                            <div class="cuadros2"></div>
-                            <div class="cuadros3"></div>
-                            <div class="cuadros4"></div>
-                        </div>
-                        <div class="gansos2">
-                            <div class="cuadros5"></div>
-                            <div class="cuadros6"></div>
-                            <div class="cuadros7"></div>
-                            <div class="cuadros8"></div>
-                        </div>
-                    </div>
-            <div id="personajes"> 
-                    <div class="maria">
+                <div id="niveles">
+                    <div class="jin">
+                        <div class="bts">
+                            <div class="container">
+                                <div class="card">
+                                    <div class="face face1">
+                                        <div class="content">
+                                            <div class="icon">
+                                                <i class="fa fa-linkedin-square" aria-hidden="true"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="face face2">
+                                        <div class="content">
+                                            <h1>
+                                                <a1 href="g" target="_blank">NIVEL I</a1>
+                                            </h1>
+                                            <p1>DATO IMPORTANTE E HISTORICO: Primer creador del modernismo en Lengua
+                                                Española.</p1>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
 
-                        <div class="flip-card1">
-                            <div class="flip-card-inner1">
-                              <div class="personaje1"> <img src="" alt="Avatar" style="width:300px;height:400px;"></div>
-                              <div class="informacion1">
-                                <h1>Rugard</h1> 
-                                <p>leona valiente</p> 
-                                <p>Juega con ella en el 2 y 4 nivel</p>
-                              </div>
+                            <div class="container2">
+                                <div class="card2">
+                                    <div class="face2 face3">
+                                        <div class="content2">
+                                            <div class="icon2">
+                                                <i class="fa fa-linkedin-square" aria-hidden="true"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="face2 face4">
+                                        <div class="content2">
+                                            <h1>
+                                                <a2 href="g" target="_blank">NIVEL II</a2>
+                                            </h1>
+                                            <p2>DATO IMPORTANTE E HISTORICO: Emitio la ley 126 del 31 de diciembre que
+                                                dio vida a la fuerza Aerea Colombiana.</p2>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="container3">
+                                <div class="card3">
+                                    <div class="face3 face5">
+                                        <div class="content3">
+                                            <div class="icon3">
+                                                <i class="fa fa-linkedin-square" aria-hidden="true"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="face3 face6">
+                                        <div class="content3">
+                                            <h1>
+                                                <a3 href="g" target="_blank">NIVEL III</a3>
+                                            </h1>
+                                            <p3>DATO IMPORTANTE E HISTORICO: Escribio " y esta pobre viejecita al morir
+                                                de dejó más que onzas, joyas, tierras, casas, ocho gatos y un turpial".
+                                            </p3>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="container4">
+                                <div class="card4">
+                                    <div class="face4 face7">
+                                        <div class="content4">
+                                            <div class="icon4">
+                                                <i class="fa fa-linkedin-square" aria-hidden="true"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="face4 face8">
+                                        <div class="content4">
+                                            <h1>
+                                                <a4 href="g" target="_blank">NIVEL IV</a4>
+                                            </h1>
+                                            <p4>DATO IMPORTANTE E HISTORICO: Se graduo en la Universidad Nacional con
+                                                los titulos de Matematico e Ingeniero Civil.</p4>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
-                        <div class="flip-card2">
-                            <div class="flip-card-inner2">
-                              <div class="personaje2"> <img src="" alt="Avatar" style="width:300px;height:400px;"></div>
-                              <div class="informacion2">
-                                <h1>Rugard</h1> 
-                                <p>leona valiente</p> 
-                                <p>Juega con ella en el 2 y 4 nivel</p>
-                              </div>
+                    </div>
+                    <div id="galeria">
+                        <div class="rugard">
+                            <div class="gansos">
+                                <div class="cuadros1"></div>
+                                <div class="cuadros2"></div>
+                                <div class="cuadros3"></div>
+                                <div class="cuadros4"></div>
+                            </div>
+                            <div class="gansos2">
+                                <div class="cuadros5"></div>
+                                <div class="cuadros6"></div>
+                                <div class="cuadros7"></div>
+                                <div class="cuadros8"></div>
                             </div>
                         </div>
-                        <div class="flip-card3">
-                            <div class="flip-card-inner3">
-                              <div class="personaje3"> <img src="" alt="Avatar" style="width:300px;height:400px;"></div>
-                              <div class="informacion3">
-                                <h1>Rugard</h1> 
-                                <p>leona valiente</p> 
-                                <p>Juega con ella en el 2 y 4 nivel</p>
-                              </div>
+                        <div id="personajes">
+                            <div class="maria">
+
+                                <div class="flip-card1">
+                                    <div class="flip-card-inner1">
+                                        <div class="personaje1"> <img src="" alt="Avatar"
+                                                style="width:300px;height:400px;"></div>
+                                        <div class="informacion1">
+                                            <h1>Rugard</h1>
+                                            <p>leona valiente</p>
+                                            <p>Juega con ella en el 2 y 4 nivel</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="flip-card2">
+                                    <div class="flip-card-inner2">
+                                        <div class="personaje2"> <img src="" alt="Avatar"
+                                                style="width:300px;height:400px;"></div>
+                                        <div class="informacion2">
+                                            <h1>Rugard</h1>
+                                            <p>leona valiente</p>
+                                            <p>Juega con ella en el 2 y 4 nivel</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="flip-card3">
+                                    <div class="flip-card-inner3">
+                                        <div class="personaje3"> <img src="" alt="Avatar"
+                                                style="width:300px;height:400px;"></div>
+                                        <div class="informacion3">
+                                            <h1>Rugard</h1>
+                                            <p>leona valiente</p>
+                                            <p>Juega con ella en el 2 y 4 nivel</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div id="revista">
+                                <div class="danna">
+                                    <div class="revista">
+                                        <div class="regalos">REGALOS LIMITADOS</div>
+                                        <div class="casa"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="contacto">
+                                <div class="correo">
+                                    <div class="contacto">
+                                        <div class="texto">correo</div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
 
-                    </div>
-            <div id="revista"> 
-                    <div class="danna">
-                        <div class="revista">
-                            <div class="regalos">REGALOS LIMITADOS</div>
-                            <div class="casa"></div>
-                        </div>
-                    </div>
-            </div> 
-            <div id="contacto"> 
-                <div class="correo">
-                    <div class="contacto">
-                        <div class="texto">correo</div>
-                    </div>
-                </div>
-        </div> 
-        </body>
-    </div>
+                        <script>
+                            var myVar;
 
-<script>
-var myVar;
+                            function myFunction() {
+                                myVar = setTimeout(showPage, 3000);
+                            }
 
-function myFunction() {
-  myVar = setTimeout(showPage, 3000);
-}
-
-function showPage() {
-  document.getElementById("loader").style.display = "none";
-  document.getElementById("myDiv").style.display = "block";
-}
-</script>
+                            function showPage() {
+                                document.getElementById("loader").style.display = "none";
+                                document.getElementById("myDiv").style.display = "block";
+                            }
+                        </script>
 
 </body>
+
 </html>
