@@ -414,9 +414,6 @@ a4, p4{
     background-color: aqua;
     width: 290px;
     height: 300px;
-    margin-bottom: 10px;
-    text-align: end;
-    font-size: 35px;
     border-color: rgb(165, 32, 104);
     border-style:solid;
     border-radius: 20px;
@@ -425,11 +422,6 @@ a4, p4{
     background-color: aqua;
     width: 290px;
     height: 180px;
-    margin-left: 30px;
-    margin-bottom: 10px;
-    text-align: end;
-    padding-right: 90px;
-    font-size: 35px;
     border-color: rgb(165, 32, 104);
     border-style:solid;
     border-radius: 20px;
@@ -438,11 +430,6 @@ a4, p4{
     background-color: aqua;
     width: 290px;
     height: 300px;
-    margin-left: 30px;
-    margin-bottom: 10px;
-    text-align: end;
-    padding-right: 90px;
-    font-size: 35px;
     border-color: rgb(165, 32, 104);
     border-style:solid;
     border-radius: 20px;
@@ -451,11 +438,6 @@ a4, p4{
     background-color: aqua;
     width: 290px;
     height: 180px;
-    margin-left: 30px;
-    margin-bottom: 10px;
-    text-align: end;
-    padding-right: 90px;
-    font-size: 35px;
     border-color: rgb(165, 32, 104);
     border-style:solid;
     border-radius: 20px;
@@ -469,10 +451,6 @@ a4, p4{
     background-color: aqua;
     width: 290px;
     height: 180px;
-    margin-bottom: 10px;
-    text-align: end;
-    padding-right: 90px;
-    font-size: 35px;
     border-color: rgb(165, 32, 104);
     border-style:solid;
     border-radius: 20px;
@@ -481,25 +459,14 @@ a4, p4{
     background-color: aqua;
     width: 290px;
     height: 300px;
-    margin-left: 30px;
-    margin-bottom: 10px;
-    text-align: end;
-    padding-right: 90px;
-    font-size: 35px;
     border-color: rgb(165, 32, 104);
     border-style:solid;
     border-radius: 20px;
-    margin-top: -120px;
 }
 .cuadros7{
     background-color: aqua;
     width: 290px;
     height: 180px;
-    margin-left: 30px;
-    margin-bottom: 10px;
-    text-align: end;
-    padding-right: 90px;
-    font-size: 35px;
     border-color: rgb(165, 32, 104);
     border-style:solid;
     border-radius: 20px;
@@ -508,15 +475,9 @@ a4, p4{
     background-color: aqua;
     width: 290px;
     height: 300px;
-    margin-left: 30px;
-    margin-bottom: 10px;
-    text-align: end;
-    padding-right: 90px;
-    font-size: 35px;
     border-color: rgb(165, 32, 104);
     border-style:solid;
     border-radius: 20px;
-    margin-top: -120px;
 }
 .maria{
     width: 1349px;
