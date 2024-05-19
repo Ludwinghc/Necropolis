@@ -1,5 +1,51 @@
 @charset "UTF-8";
 /* Document */
+/* Inicio de Css custom añadido*/
+.caja1{
+  background-image: url(../imagenes/FondoI1.jpg);
+  height: auto;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.caja2{
+  background-image: url(../imagenes/FondoH1.jpg);
+  height: auto;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.caja4{
+  background-image: url(../imagenes/FondoG1.jpg);
+  height: auto;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.caja5{
+  background-image: url(../imagenes/FondoR1.jpg);
+  height: auto;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.menu{
+    background-color: rgb(111, 52, 139);
+    color: white;
+}
+.tituloHistoria{
+  color:  rgb(111, 52, 139);;
+}
+.tituloRegalos{
+  color: rgb(247, 174, 125);
+}
+.imagenRevista{
+  width: 50vh;
+  height: 50vh;
+}
+/* Fin Css custom añadido */
+
+
 *{ margin: 0px;
 padding: 0px;
 box-sizing: border-box;
@@ -18,30 +64,7 @@ button{
     border: none;
     background: none;
 }
-.caja1{
-    width: 1280px;
-    height: 620px;
-}
-.usb{
-    background-image: url(../imagenes/FondoI1.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    width: 1349px;
-    height: 620px;
-    margin: 0px;
-}
-.menu{
-    width: 1350px;
-    height: 70px;
-    position: fixed;
-    left: 0px;
-    top: 0%;
-    background-color: rgb(111, 52, 139);
-    display: flex;
-    padding: 20px;
-    z-index: 2;
-}
+
 .botones button{
     width: 80px;
     height: 68px;
@@ -103,19 +126,7 @@ button{
     margin-right: 50px;
     margin-left: 50px;
 }
-.croquetas{
-    display: flex;
-    width: 1349px;
-    height: 620px;
-}
-.gatos{
-    width: 1349px;
-    height: 620px;
-    background-image: url(../imagenes/FondoH1.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-}
+
 .Titulo{
     width: 1349px;
     height: 50px;
@@ -126,17 +137,9 @@ button{
     color: rgb(111, 52, 139);
     font-family: elephant;
 }
-.Imagen{
-    background-image: url(../videos/libroP.gif);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    width: 1030px;
-    height: 510px;
-    margin-top: -50px;
-    font-size: 25px;
-    text-align: center;
-    color: antiquewhite;
+.imagenLibro{
+    width: 60vh;
+    height: 60vh;
 }
 .chimu{
     width: 1349px;
@@ -157,7 +160,7 @@ button{
     width: 1349px;
 }
 
-.container .card .face.face1{
+.container1 .card .face.face1{
     width: 300px;
     height: 200px;
     position: relative;
@@ -175,18 +178,18 @@ button{
     transition: all 1s ease;
 }
 
-.container .card:hover .face.face1{
+.container1 .card:hover .face.face1{
     background: rgb(247, 174, 125);
     transform: translateY(0px);
     transition: all 1s ease;
 }
 
-.container .card .face.face1 .content i{
+.container1 .card .face.face1 .content i{
     width: 50px;
     height: 50px;
 }
 
-.container .card .face.face2{
+.container1 .card .face.face2{
     width: 300px;
     height: 200px;
     position: relative;
@@ -203,7 +206,7 @@ button{
     transition: all 2s ease;
 }
 
-.container .card:hover .face.face2{
+.container1 .card:hover .face.face2{
     transform: translateY(0px);
     transition: all 1s ease;
 }
